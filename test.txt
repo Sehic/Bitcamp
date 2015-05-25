@@ -52,3 +52,38 @@ int brojSObjeStrane = 112211, pomocni = 0, noviBroj = 0;
 			fibonaci2=suma1;
 			brojac5++;
 		}
+		
+		
+		
+		
+		
+		
+		package ba.bitcamp.hajrudin.nova.sedmica.predavanje;
+
+public class Main3 {
+
+	public static void main(String[] args) {
+		int prostBroj=50000, brojac4=2, brojac=1, brojacProstih=0;
+		boolean nest = true;
+		do{
+			brojac4=2;
+		while(brojac4<=brojac){
+			if(brojac%brojac4 == 0 && brojac4 != brojac){
+				nest = false;
+				break;
+		}
+			else
+				nest = true;
+			brojac4++;
+		}
+		if(nest==true){
+		/*System.out.println(brojac);*/
+		brojacProstih++;
+		}
+		brojac++;
+	}while(brojac<prostBroj);
+		System.out.println("Ima "+brojacProstih+" prostih brojeva.");
+	}
+
+}
+
